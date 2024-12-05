@@ -1,0 +1,385 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Thu Dec  5 18:43:35 2024
+| Host         : IT-RDIA-NSH running 64-bit Ubuntu 24.04.1 LTS
+| Command      : report_control_sets -verbose -file VGA_TOP_control_sets_placed.rpt
+| Design       : VGA_TOP
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   307 |
+|    Minimum number of control sets                        |   307 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    22 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   307 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |   301 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |              58 |           36 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              32 |           13 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+--------------------------------------------------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+|     Clock Signal     |                                        Enable Signal                                       |                    Set/Reset Signal                    | Slice Load Count | Bel Load Count |
++----------------------+--------------------------------------------------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+|  CLK100MHZ_IBUF_BUFG |                                                                                            | core_inst/vga_timing/AR[0]                             |                1 |              2 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_14  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_20  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_2   |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_19  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_18  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_17  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_16  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_15  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_13  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_12  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_22  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_11  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_10  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_1   |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_0   |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]     |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_89  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_88  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_87  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_3   |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_159 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_158 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_157 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_156 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_155 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_154 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_153 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_152 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_30  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_21  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_29  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_28  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_27  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_26  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_25  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_24  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_23  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_85  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_56  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_68  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_67  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_66  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_61  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_60  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_6   |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_59  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_58  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_57  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_69  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_4   |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_39  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_38  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_37  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_34  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_231 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_229 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_228 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_77  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_160 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_84  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_83  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_82  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_81  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_80  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_8   |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_79  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_78  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_86  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_76  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_75  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_74  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_73  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_72  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_71  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_70  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_7   |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_151 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_144 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_143 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_142 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_146 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_147 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_145 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_148 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_149 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_15  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_14  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_2   |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_199 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_195 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_198 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_197 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_196 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_193 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_194 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_132 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_38  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_37  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_4   |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_40  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_39  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_41  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_42  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_130 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_133 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_192 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_131 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_135 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_134 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_139 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_136 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_137 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_141 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_140 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_150 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_174 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_172 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_171 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_170 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_17  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_169 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_168 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_20  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_167 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_173 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_188 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_166 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_165 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_164 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_163 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_162 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_161 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_227 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_182 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_191 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_190 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_19  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_189 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_185 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_187 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_186 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_183 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_184 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_16  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_181 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_18  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_180 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_179 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_175 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_178 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_177 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_176 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_105 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_113 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_112 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_111 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_110 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_11  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_109 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_108 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_107 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_106 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_114 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_104 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_103 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_102 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_101 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_100 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_10  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_1   |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_0   |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_122 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_207 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_13  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_129 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_128 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_127 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_126 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_125 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_124 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_123 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]     |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_121 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_120 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_12  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_119 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_118 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_117 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_116 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_115 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_43  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_51  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_50  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_5   |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_49  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_48  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_47  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_46  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_45  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_44  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_52  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_36  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_35  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_34  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_33  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_32  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_31  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_138 |                                                        |                1 |              4 |
+|  BTNC_IBUF_BUFG      |                                                                                            | core_inst/vga_timing/AR[0]                             |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_60  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_9   |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_8   |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_7   |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_65  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_64  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_63  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_62  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_61  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_21  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_6   |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_59  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_58  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_57  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_56  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_55  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_54  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[1]_53  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_92  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_201 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_200 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_99  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_98  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_97  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_96  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_95  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_94  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_93  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_202 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_91  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_90  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_9   |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_65  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_64  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_63  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_62  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_55  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_213 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_226 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_221 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_220 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_22  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_219 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_217 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_216 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_214 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_54  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_211 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_210 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_209 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_208 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_206 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_205 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_204 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_203 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_230 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_31  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_30  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_3   |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_29  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_28  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_27  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_26  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_25  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_24  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_32  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_23  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_225 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_224 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_223 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_222 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_218 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_215 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_212 |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_33  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_52  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_51  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_50  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_5   |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_49  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_48  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_47  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_46  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_45  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_44  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_43  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_42  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_41  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_40  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_36  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_35  |                                                        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | cicrle_datapath/xB_counter/flipflop_gen_loop[4].FF/FSM_sequential_current_state_reg[2]_53  |                                                        |                1 |              4 |
+|  BTNC_IBUF_BUFG      | controlpath_inst/FSM_sequential_current_state_reg[1]_0                                     | core_inst/vga_timing/AR[0]                             |                2 |              6 |
+|  BTNC_IBUF_BUFG      | controlpath_inst/FSM_sequential_current_state_reg[0]_0                                     | core_inst/vga_timing/AR[0]                             |                4 |              8 |
+|  BTNC_IBUF_BUFG      | controlpath_inst/plot                                                                      | controlpath_inst/FSM_sequential_current_state_reg[1]_1 |                3 |              8 |
+|  w_25MHz_BUFG        | core_inst/vga_timing/v_count                                                               | core_inst/vga_timing/AR[0]                             |                4 |             10 |
+|  w_25MHz_BUFG        |                                                                                            | core_inst/vga_timing/AR[0]                             |               34 |             52 |
++----------------------+--------------------------------------------------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+
+

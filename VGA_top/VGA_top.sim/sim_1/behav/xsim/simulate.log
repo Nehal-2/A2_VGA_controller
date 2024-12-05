@@ -1,0 +1,3 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+$finish called at time : 220 ns : File "/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sim_1/new/tb_VGA_TOP.sv" Line 72

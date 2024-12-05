@@ -1,0 +1,27 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /home/it/Xilinx/Vivado/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto 90ade408325743189163f653a599d5ab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_VGA_TOP_behav xil_defaultlib.tb_VGA_TOP xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 10 for port 'x' [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/Downloads/vga_core.sv:27]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 10 for port 'y' [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/Downloads/vga_core.sv:28]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'write_address' [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/Downloads/vga_core.sv:39]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'read_address' [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/Downloads/vga_core.sv:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.vga_controller_default
+Compiling module xil_defaultlib.video_memory(MEM_INIT_FILE="defa...
+Compiling module xil_defaultlib.vga_core
+Compiling module xil_defaultlib.d_flipflop
+Compiling module xil_defaultlib.nbit_counter(n=8)
+Compiling module xil_defaultlib.nbit_counter(n=7)
+Compiling module xil_defaultlib.lineclear_algo
+Compiling module xil_defaultlib.nbit_counter(n=3)
+Compiling module xil_defaultlib.bresenham_algo
+Compiling module xil_defaultlib.controlpath
+Compiling module xil_defaultlib.VGA_TOP
+Compiling module xil_defaultlib.tb_VGA_TOP
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_VGA_TOP_behav

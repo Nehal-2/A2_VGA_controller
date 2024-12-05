@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_VGA_TOP_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_VGA_TOP" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="220000001fs"></ZoomEndTime>
+      <Cursor1Time time="31646000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="180"></NameColumnWidth>
+      <ValueColumnWidth column_width="122"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="56" />
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/reset_n">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/circle">
+      <obj_property name="ElementShortName">circle</obj_property>
+      <obj_property name="ObjectShortName">circle</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/clear">
+      <obj_property name="ElementShortName">clear</obj_property>
+      <obj_property name="ObjectShortName">clear</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/line">
+      <obj_property name="ElementShortName">line</obj_property>
+      <obj_property name="ObjectShortName">line</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_VGA_TOP/VGA_R">
+      <obj_property name="ElementShortName">VGA_R[3:0]</obj_property>
+      <obj_property name="ObjectShortName">VGA_R[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_VGA_TOP/VGA_G">
+      <obj_property name="ElementShortName">VGA_G[3:0]</obj_property>
+      <obj_property name="ObjectShortName">VGA_G[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_VGA_TOP/VGA_B">
+      <obj_property name="ElementShortName">VGA_B[3:0]</obj_property>
+      <obj_property name="ObjectShortName">VGA_B[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/VGA_HS">
+      <obj_property name="ElementShortName">VGA_HS</obj_property>
+      <obj_property name="ObjectShortName">VGA_HS</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/VGA_VS">
+      <obj_property name="ElementShortName">VGA_VS</obj_property>
+      <obj_property name="ObjectShortName">VGA_VS</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_VGA_TOP/SW">
+      <obj_property name="ElementShortName">SW[15:0]</obj_property>
+      <obj_property name="ObjectShortName">SW[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/CLK100MHZ">
+      <obj_property name="ElementShortName">CLK100MHZ</obj_property>
+      <obj_property name="ObjectShortName">CLK100MHZ</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/CPU_RESETN">
+      <obj_property name="ElementShortName">CPU_RESETN</obj_property>
+      <obj_property name="ObjectShortName">CPU_RESETN</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/BTNC">
+      <obj_property name="ElementShortName">BTNC</obj_property>
+      <obj_property name="ObjectShortName">BTNC</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/BTNR">
+      <obj_property name="ElementShortName">BTNR</obj_property>
+      <obj_property name="ObjectShortName">BTNR</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/BTNL">
+      <obj_property name="ElementShortName">BTNL</obj_property>
+      <obj_property name="ObjectShortName">BTNL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_VGA_TOP/dut/VGA_R">
+      <obj_property name="ElementShortName">VGA_R[3:0]</obj_property>
+      <obj_property name="ObjectShortName">VGA_R[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_VGA_TOP/dut/VGA_G">
+      <obj_property name="ElementShortName">VGA_G[3:0]</obj_property>
+      <obj_property name="ObjectShortName">VGA_G[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_VGA_TOP/dut/VGA_B">
+      <obj_property name="ElementShortName">VGA_B[3:0]</obj_property>
+      <obj_property name="ObjectShortName">VGA_B[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/VGA_HS">
+      <obj_property name="ElementShortName">VGA_HS</obj_property>
+      <obj_property name="ObjectShortName">VGA_HS</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/VGA_VS">
+      <obj_property name="ElementShortName">VGA_VS</obj_property>
+      <obj_property name="ObjectShortName">VGA_VS</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_VGA_TOP/dut/SW">
+      <obj_property name="ElementShortName">SW[15:0]</obj_property>
+      <obj_property name="ObjectShortName">SW[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/reset_n">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/clear">
+      <obj_property name="ElementShortName">clear</obj_property>
+      <obj_property name="ObjectShortName">clear</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/line">
+      <obj_property name="ElementShortName">line</obj_property>
+      <obj_property name="ObjectShortName">line</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/circle">
+      <obj_property name="ElementShortName">circle</obj_property>
+      <obj_property name="ObjectShortName">circle</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_VGA_TOP/dut/radius">
+      <obj_property name="ElementShortName">radius[6:0]</obj_property>
+      <obj_property name="ObjectShortName">radius[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_VGA_TOP/dut/in_color">
+      <obj_property name="ElementShortName">in_color[2:0]</obj_property>
+      <obj_property name="ObjectShortName">in_color[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_VGA_TOP/dut/color_out">
+      <obj_property name="ElementShortName">color_out[2:0]</obj_property>
+      <obj_property name="ObjectShortName">color_out[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_VGA_TOP/dut/x_out">
+      <obj_property name="ElementShortName">x_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">x_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_VGA_TOP/dut/y_out">
+      <obj_property name="ElementShortName">y_out[6:0]</obj_property>
+      <obj_property name="ObjectShortName">y_out[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/plot">
+      <obj_property name="ElementShortName">plot</obj_property>
+      <obj_property name="ObjectShortName">plot</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/enX">
+      <obj_property name="ElementShortName">enX</obj_property>
+      <obj_property name="ObjectShortName">enX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/enY">
+      <obj_property name="ElementShortName">enY</obj_property>
+      <obj_property name="ObjectShortName">enY</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/enC">
+      <obj_property name="ElementShortName">enC</obj_property>
+      <obj_property name="ObjectShortName">enC</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/en_xB">
+      <obj_property name="ElementShortName">en_xB</obj_property>
+      <obj_property name="ObjectShortName">en_xB</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/load_xB">
+      <obj_property name="ElementShortName">load_xB</obj_property>
+      <obj_property name="ObjectShortName">load_xB</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/load_yB">
+      <obj_property name="ElementShortName">load_yB</obj_property>
+      <obj_property name="ObjectShortName">load_yB</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/en_yB">
+      <obj_property name="ElementShortName">en_yB</obj_property>
+      <obj_property name="ObjectShortName">en_yB</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/en_d">
+      <obj_property name="ElementShortName">en_d</obj_property>
+      <obj_property name="ObjectShortName">en_d</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/y_count_reset">
+      <obj_property name="ElementShortName">y_count_reset</obj_property>
+      <obj_property name="ObjectShortName">y_count_reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/x_count_reset">
+      <obj_property name="ElementShortName">x_count_reset</obj_property>
+      <obj_property name="ObjectShortName">x_count_reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/px_count_reset">
+      <obj_property name="ElementShortName">px_count_reset</obj_property>
+      <obj_property name="ObjectShortName">px_count_reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/clear_ff">
+      <obj_property name="ElementShortName">clear_ff</obj_property>
+      <obj_property name="ObjectShortName">clear_ff</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/clear_pressed">
+      <obj_property name="ElementShortName">clear_pressed</obj_property>
+      <obj_property name="ObjectShortName">clear_pressed</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_VGA_TOP/dut/x_line">
+      <obj_property name="ElementShortName">x_line[7:0]</obj_property>
+      <obj_property name="ObjectShortName">x_line[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_VGA_TOP/dut/x_circle">
+      <obj_property name="ElementShortName">x_circle[7:0]</obj_property>
+      <obj_property name="ObjectShortName">x_circle[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_VGA_TOP/dut/y_line">
+      <obj_property name="ElementShortName">y_line[6:0]</obj_property>
+      <obj_property name="ObjectShortName">y_line[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_VGA_TOP/dut/y_circle">
+      <obj_property name="ElementShortName">y_circle[6:0]</obj_property>
+      <obj_property name="ObjectShortName">y_circle[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_VGA_TOP/dut/color_line">
+      <obj_property name="ElementShortName">color_line[2:0]</obj_property>
+      <obj_property name="ObjectShortName">color_line[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/max_x">
+      <obj_property name="ElementShortName">max_x</obj_property>
+      <obj_property name="ObjectShortName">max_x</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/max_y">
+      <obj_property name="ElementShortName">max_y</obj_property>
+      <obj_property name="ObjectShortName">max_y</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/xB_yB_comp">
+      <obj_property name="ElementShortName">xB_yB_comp</obj_property>
+      <obj_property name="ObjectShortName">xB_yB_comp</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/d_comp">
+      <obj_property name="ElementShortName">d_comp</obj_property>
+      <obj_property name="ObjectShortName">d_comp</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_VGA_TOP/dut/en">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+</wave_config>
