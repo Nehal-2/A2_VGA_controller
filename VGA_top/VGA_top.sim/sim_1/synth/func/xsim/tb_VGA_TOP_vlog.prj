@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tb_VGA_TOP_func_synth.v" \
+
+sv xil_defaultlib  \
+"../../../../../VGA_top.srcs/sim_1/new/tb_VGA_TOP.sv" \
+
+# Do not sort compile order
+nosort

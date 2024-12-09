@@ -1,6 +1,6 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
-"../../../../VGA_top.srcs/sources_1/imports/it/Downloads/vga_controller.v" \
+"../../../../VGA_top.srcs/sources_1/imports/Downloads/vga_controller.v" \
 
 sv xil_defaultlib  \
 "../../../../VGA_top.srcs/sources_1/new/VGA_TOP.sv" \
@@ -9,8 +9,8 @@ sv xil_defaultlib  \
 "../../../../VGA_top.srcs/sources_1/imports/it/DigitalSystemDesign/Assignment2/VGA_display_top/VGA_display_top.srcs/sources_1/imports/data_path/bresenham_algo/bresenham_algo.srcs/sources_1/imports/Lab4/d_FF/d_FF_srcs/d_flipflop.sv" \
 "../../../../VGA_top.srcs/sources_1/imports/it/DigitalSystemDesign/Assignment2/VGA_display_top/VGA_display_top.srcs/sources_1/imports/data_path/line_clear/line_clear.srcs/sources_1/new/lineclear_algo.sv" \
 "../../../../VGA_top.srcs/sources_1/imports/it/DigitalSystemDesign/Assignment2/VGA_display_top/VGA_display_top.srcs/sources_1/imports/data_path/bresenham_algo/bresenham_algo.srcs/sources_1/imports/new/nbit_counter.sv" \
-"../../../../VGA_top.srcs/sources_1/imports/it/Downloads/vga_core.sv" \
-"../../../../VGA_top.srcs/sources_1/imports/it/Downloads/video_memory.sv" \
+"../../../../VGA_top.srcs/sources_1/imports/Downloads/vga_core.sv" \
+"../../../../VGA_top.srcs/sources_1/imports/Downloads/video_memory.sv" \
 "../../../../VGA_top.srcs/sim_1/new/tb_VGA_TOP.sv" \
 
 # compile glbl module

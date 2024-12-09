@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Thu Dec  5 18:42:50 2024
-# Process ID: 741987
+# Start of session at: Mon Dec  9 16:15:00 2024
+# Process ID: 249002
 # Current directory: /home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.runs/synth_1
 # Command line: vivado -log VGA_TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source VGA_TOP.tcl
 # Log file: /home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.runs/synth_1/VGA_TOP.vds
@@ -16,14 +16,14 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 742020 
+INFO: Helper process launched with PID 249030 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1777.672 ; gain = 155.688 ; free physical = 18838 ; free virtual = 33235
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1777.750 ; gain = 155.688 ; free physical = 21324 ; free virtual = 34195
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'VGA_TOP' [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/new/VGA_TOP.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'vga_core' [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/Downloads/vga_core.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'vga_core' [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/Downloads/vga_core.sv:1]
 	Parameter MEM_INIT_FILE bound to: default.mem - type: string 
-INFO: [Synth 8-6157] synthesizing module 'vga_controller' [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/Downloads/vga_controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/Downloads/vga_controller.v:21]
 	Parameter HD bound to: 640 - type: integer 
 	Parameter HF bound to: 48 - type: integer 
 	Parameter HB bound to: 16 - type: integer 
@@ -34,21 +34,18 @@ INFO: [Synth 8-6157] synthesizing module 'vga_controller' [/home/it/DigitalSyste
 	Parameter VB bound to: 33 - type: integer 
 	Parameter VR bound to: 2 - type: integer 
 	Parameter VMAX bound to: 524 - type: integer 
-	Parameter X_SCALE bound to: 4 - type: integer 
-	Parameter Y_SCALE bound to: 4 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (1#1) [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/Downloads/vga_controller.v:3]
-WARNING: [Synth 8-689] width (8) of port connection 'x' does not match port width (10) of module 'vga_controller' [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/Downloads/vga_core.sv:27]
-WARNING: [Synth 8-689] width (7) of port connection 'y' does not match port width (10) of module 'vga_controller' [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/Downloads/vga_core.sv:28]
-WARNING: [Synth 8-7023] instance 'vga_timing' of module 'vga_controller' has 8 connections declared, but only 7 given [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/Downloads/vga_core.sv:21]
-INFO: [Synth 8-6157] synthesizing module 'video_memory' [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/Downloads/video_memory.sv:1]
-	Parameter MEM_INIT_FILE bound to: default.mem - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'video_memory' (2#1) [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/Downloads/video_memory.sv:1]
-WARNING: [Synth 8-689] width (32) of port connection 'write_address' does not match port width (16) of module 'video_memory' [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/Downloads/vga_core.sv:39]
-WARNING: [Synth 8-689] width (32) of port connection 'read_address' does not match port width (16) of module 'video_memory' [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/Downloads/vga_core.sv:40]
-INFO: [Synth 8-6155] done synthesizing module 'vga_core' (3#1) [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/Downloads/vga_core.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (1#1) [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/Downloads/vga_controller.v:21]
+WARNING: [Synth 8-7023] instance 'vga_timing' of module 'vga_controller' has 8 connections declared, but only 7 given [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/Downloads/vga_core.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'video_memory' [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/Downloads/video_memory.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'video_memory' (2#1) [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/Downloads/video_memory.sv:1]
+WARNING: [Synth 8-689] width (32) of port connection 'write_address' does not match port width (15) of module 'video_memory' [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/Downloads/vga_core.sv:49]
+WARNING: [Synth 8-689] width (16) of port connection 'read_address' does not match port width (15) of module 'video_memory' [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/Downloads/vga_core.sv:50]
+INFO: [Synth 8-6155] done synthesizing module 'vga_core' (3#1) [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/Downloads/vga_core.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'd_flipflop' [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/DigitalSystemDesign/Assignment2/VGA_display_top/VGA_display_top.srcs/sources_1/imports/data_path/bresenham_algo/bresenham_algo.srcs/sources_1/imports/Lab4/d_FF/d_FF_srcs/d_flipflop.sv:39]
 INFO: [Synth 8-6155] done synthesizing module 'd_flipflop' (4#1) [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/DigitalSystemDesign/Assignment2/VGA_display_top/VGA_display_top.srcs/sources_1/imports/data_path/bresenham_algo/bresenham_algo.srcs/sources_1/imports/Lab4/d_FF/d_FF_srcs/d_flipflop.sv:39]
-WARNING: [Synth 8-7023] instance 'clear_press' of module 'd_flipflop' has 6 connections declared, but only 5 given [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/new/VGA_TOP.sv:69]
+WARNING: [Synth 8-7023] instance 'clear_press' of module 'd_flipflop' has 6 connections declared, but only 5 given [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/new/VGA_TOP.sv:73]
+WARNING: [Synth 8-7023] instance 'line_press' of module 'd_flipflop' has 6 connections declared, but only 5 given [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/new/VGA_TOP.sv:83]
+WARNING: [Synth 8-7023] instance 'circl_press' of module 'd_flipflop' has 6 connections declared, but only 5 given [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/new/VGA_TOP.sv:93]
 INFO: [Synth 8-6157] synthesizing module 'lineclear_algo' [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/DigitalSystemDesign/Assignment2/VGA_display_top/VGA_display_top.srcs/sources_1/imports/data_path/line_clear/line_clear.srcs/sources_1/new/lineclear_algo.sv:22]
 INFO: [Synth 8-6157] synthesizing module 'nbit_counter' [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/DigitalSystemDesign/Assignment2/VGA_display_top/VGA_display_top.srcs/sources_1/imports/data_path/bresenham_algo/bresenham_algo.srcs/sources_1/imports/new/nbit_counter.sv:23]
 	Parameter n bound to: 8 - type: integer 
@@ -77,34 +74,35 @@ INFO: [Synth 8-6155] done synthesizing module 'lineclear_algo' (6#1) [/home/it/D
 INFO: [Synth 8-6157] synthesizing module 'bresenham_algo' [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/DigitalSystemDesign/Assignment2/VGA_display_top/VGA_display_top.srcs/sources_1/imports/data_path/bresenham_algo/bresenham_algo.srcs/sources_1/new/bresenham_algo.sv:23]
 	Parameter XC bound to: 80 - type: integer 
 	Parameter YC bound to: 60 - type: integer 
-WARNING: [Synth 8-7023] instance 'init_d' of module 'd_flipflop' has 6 connections declared, but only 5 given [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/DigitalSystemDesign/Assignment2/VGA_display_top/VGA_display_top.srcs/sources_1/imports/data_path/bresenham_algo/bresenham_algo.srcs/sources_1/new/bresenham_algo.sv:50]
+WARNING: [Synth 8-7023] instance 'init_d' of module 'd_flipflop' has 6 connections declared, but only 5 given [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/DigitalSystemDesign/Assignment2/VGA_display_top/VGA_display_top.srcs/sources_1/imports/data_path/bresenham_algo/bresenham_algo.srcs/sources_1/new/bresenham_algo.sv:51]
 INFO: [Synth 8-6157] synthesizing module 'nbit_counter__parameterized1' [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/DigitalSystemDesign/Assignment2/VGA_display_top/VGA_display_top.srcs/sources_1/imports/data_path/bresenham_algo/bresenham_algo.srcs/sources_1/imports/new/nbit_counter.sv:23]
 	Parameter n bound to: 3 - type: integer 
 WARNING: [Synth 8-7023] instance 'FF' of module 'd_flipflop' has 6 connections declared, but only 5 given [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/DigitalSystemDesign/Assignment2/VGA_display_top/VGA_display_top.srcs/sources_1/imports/data_path/bresenham_algo/bresenham_algo.srcs/sources_1/imports/new/nbit_counter.sv:55]
 WARNING: [Synth 8-7023] instance 'FF' of module 'd_flipflop' has 6 connections declared, but only 5 given [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/DigitalSystemDesign/Assignment2/VGA_display_top/VGA_display_top.srcs/sources_1/imports/data_path/bresenham_algo/bresenham_algo.srcs/sources_1/imports/new/nbit_counter.sv:55]
 WARNING: [Synth 8-7023] instance 'FF' of module 'd_flipflop' has 6 connections declared, but only 5 given [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/DigitalSystemDesign/Assignment2/VGA_display_top/VGA_display_top.srcs/sources_1/imports/data_path/bresenham_algo/bresenham_algo.srcs/sources_1/imports/new/nbit_counter.sv:55]
 INFO: [Synth 8-6155] done synthesizing module 'nbit_counter__parameterized1' (6#1) [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/DigitalSystemDesign/Assignment2/VGA_display_top/VGA_display_top.srcs/sources_1/imports/data_path/bresenham_algo/bresenham_algo.srcs/sources_1/imports/new/nbit_counter.sv:23]
-WARNING: [Synth 8-7023] instance 'px_counter' of module 'nbit_counter' has 7 connections declared, but only 5 given [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/DigitalSystemDesign/Assignment2/VGA_display_top/VGA_display_top.srcs/sources_1/imports/data_path/bresenham_algo/bresenham_algo.srcs/sources_1/new/bresenham_algo.sv:126]
+WARNING: [Synth 8-7023] instance 'px_counter' of module 'nbit_counter' has 7 connections declared, but only 5 given [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/DigitalSystemDesign/Assignment2/VGA_display_top/VGA_display_top.srcs/sources_1/imports/data_path/bresenham_algo/bresenham_algo.srcs/sources_1/new/bresenham_algo.sv:129]
 INFO: [Synth 8-6155] done synthesizing module 'bresenham_algo' (7#1) [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/DigitalSystemDesign/Assignment2/VGA_display_top/VGA_display_top.srcs/sources_1/imports/data_path/bresenham_algo/bresenham_algo.srcs/sources_1/new/bresenham_algo.sv:23]
-WARNING: [Synth 8-7023] instance 'cicrle_datapath' of module 'bresenham_algo' has 16 connections declared, but only 15 given [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/new/VGA_TOP.sv:102]
 INFO: [Synth 8-6157] synthesizing module 'controlpath' [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/DigitalSystemDesign/Assignment2/VGA_display_top/VGA_display_top.srcs/sources_1/imports/controlpath/controlpath.srcs/sources_1/new/controlpath.sv:23]
+INFO: [Synth 8-226] default block is never used [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/DigitalSystemDesign/Assignment2/VGA_display_top/VGA_display_top.srcs/sources_1/imports/controlpath/controlpath.srcs/sources_1/new/controlpath.sv:89]
+INFO: [Synth 8-226] default block is never used [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/DigitalSystemDesign/Assignment2/VGA_display_top/VGA_display_top.srcs/sources_1/imports/controlpath/controlpath.srcs/sources_1/new/controlpath.sv:174]
 INFO: [Synth 8-6155] done synthesizing module 'controlpath' (8#1) [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/DigitalSystemDesign/Assignment2/VGA_display_top/VGA_display_top.srcs/sources_1/imports/controlpath/controlpath.srcs/sources_1/new/controlpath.sv:23]
 INFO: [Synth 8-6155] done synthesizing module 'VGA_TOP' (9#1) [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/new/VGA_TOP.sv:23]
+WARNING: [Synth 8-3331] design controlpath has unconnected port clear
 WARNING: [Synth 8-3331] design bresenham_algo has unconnected port color[2]
 WARNING: [Synth 8-3331] design bresenham_algo has unconnected port color[1]
 WARNING: [Synth 8-3331] design bresenham_algo has unconnected port color[0]
 WARNING: [Synth 8-3331] design lineclear_algo has unconnected port areset
 WARNING: [Synth 8-3331] design lineclear_algo has unconnected port clear
 WARNING: [Synth 8-3331] design video_memory has unconnected port resetn
-WARNING: [Synth 8-3331] design video_memory has unconnected port write_address[15]
-WARNING: [Synth 8-3331] design video_memory has unconnected port read_address[15]
+WARNING: [Synth 8-3331] design VGA_TOP has unconnected port SW[15]
 WARNING: [Synth 8-3331] design VGA_TOP has unconnected port SW[14]
 WARNING: [Synth 8-3331] design VGA_TOP has unconnected port SW[13]
 WARNING: [Synth 8-3331] design VGA_TOP has unconnected port SW[12]
 WARNING: [Synth 8-3331] design VGA_TOP has unconnected port SW[11]
 WARNING: [Synth 8-3331] design VGA_TOP has unconnected port SW[10]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1832.422 ; gain = 210.438 ; free physical = 18789 ; free virtual = 33187
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1832.500 ; gain = 210.438 ; free physical = 21230 ; free virtual = 34126
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -117,10 +115,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1838.359 ; gain = 216.375 ; free physical = 18789 ; free virtual = 33187
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1836.469 ; gain = 214.406 ; free physical = 21271 ; free virtual = 34123
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1838.359 ; gain = 216.375 ; free physical = 18789 ; free virtual = 33187
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1836.469 ; gain = 214.406 ; free physical = 21271 ; free virtual = 34123
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -175,6 +173,9 @@ Resolution: If [get_<value>] was used to populate the object, check to make sure
 WARNING: [Vivado 12-584] No ports matched 'AN[7]'. [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/constrs_1/imports/FPGA programming files/pin-assignment.xdc:72]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/constrs_1/imports/FPGA programming files/pin-assignment.xdc:72]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNU'. [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/constrs_1/imports/FPGA programming files/pin-assignment.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/constrs_1/imports/FPGA programming files/pin-assignment.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 WARNING: [Vivado 12-507] No nets matched 'BTNC_IBUF'. [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/constrs_1/imports/FPGA programming files/pin-assignment.xdc:84]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/constrs_1/imports/FPGA programming files/pin-assignment.xdc:84]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
@@ -183,26 +184,26 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/VGA_TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2015.016 ; gain = 0.000 ; free physical = 18748 ; free virtual = 33146
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2015.156 ; gain = 0.000 ; free physical = 21274 ; free virtual = 34094
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2015.016 ; gain = 0.000 ; free physical = 18748 ; free virtual = 33146
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2015.156 ; gain = 0.000 ; free physical = 21274 ; free virtual = 34094
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2015.016 ; gain = 393.031 ; free physical = 18763 ; free virtual = 33174
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2015.156 ; gain = 393.094 ; free physical = 21192 ; free virtual = 34067
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2015.016 ; gain = 393.031 ; free physical = 18763 ; free virtual = 33174
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2015.156 ; gain = 393.094 ; free physical = 21192 ; free virtual = 34067
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2015.016 ; gain = 393.031 ; free physical = 18763 ; free virtual = 33176
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2015.156 ; gain = 393.094 ; free physical = 21192 ; free virtual = 34067
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/DigitalSystemDesign/Assignment2/VGA_display_top/VGA_display_top.srcs/sources_1/imports/data_path/bresenham_algo/bresenham_algo.srcs/sources_1/imports/new/nbit_counter.sv:43]
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/DigitalSystemDesign/Assignment2/VGA_display_top/VGA_display_top.srcs/sources_1/imports/data_path/bresenham_algo/bresenham_algo.srcs/sources_1/imports/new/nbit_counter.sv:43]
@@ -210,17 +211,18 @@ INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in modul
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                    IDLE |                              000 |                          0000000
-                 Next_px |                              110 |                          0000001
-                Next_row |                              101 |                          0000010
-              Initcircle |                              100 |                          0000011
-                    IncX |                              010 |                          0000100
-           Dlessthanzero |                              011 |                          0000101
-           Dmorethanzero |                              001 |                          0000110
+                    IDLE |                              000 |                              000
+                 Next_px |                              001 |                              001
+                Next_row |                              010 |                              010
+              Initcircle |                              011 |                              011
+                   pixel |                              100 |                              100
+                    IncX |                              101 |                              101
+           Dmorethanzero |                              110 |                              111
+           Dlessthanzero |                              111 |                              110
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'controlpath'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2015.016 ; gain = 393.031 ; free physical = 18705 ; free virtual = 33179
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2015.156 ; gain = 393.094 ; free physical = 21199 ; free virtual = 34070
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -233,24 +235,26 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     10 Bit       Adders := 2     
-	   2 Input      8 Bit       Adders := 6     
-	   2 Input      7 Bit       Adders := 7     
-	   3 Input      7 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 7     
+	   2 Input      7 Bit       Adders := 5     
 	   2 Input      3 Bit       Adders := 1     
 	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
-	               10 Bit    Registers := 2     
-	                7 Bit    Registers := 2     
+	               10 Bit    Registers := 5     
+	                8 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 28    
+	                1 Bit    Registers := 32    
 +---Muxes : 
-	   2 Input      8 Bit        Muxes := 3     
-	   2 Input      7 Bit        Muxes := 6     
-	   7 Input      7 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      7 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 3     
 	   2 Input      3 Bit        Muxes := 16    
-	   7 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 10    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -270,8 +274,13 @@ Detailed RTL Component Info :
 	   2 Input     10 Bit       Adders := 2     
 	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
-	               10 Bit    Registers := 2     
+	               10 Bit    Registers := 4     
 	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module vga_core 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
 Module d_flipflop 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -304,19 +313,23 @@ Detailed RTL Component Info :
 Module bresenham_algo 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      8 Bit       Adders := 4     
-	   3 Input      7 Bit       Adders := 1     
-	   2 Input      7 Bit       Adders := 6     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 5     
+	   2 Input      7 Bit       Adders := 4     
 +---Registers : 
-	                7 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input      7 Bit        Muxes := 4     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
 Module controlpath 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   7 Input      7 Bit        Muxes := 1     
-	   7 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 13    
+	   8 Input      1 Bit        Muxes := 10    
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -333,18 +346,14 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lineclear_datapath/y_counter/flipflop_gen_loop[6].FF/qs_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lineclear_datapath/y_counter/flipflop_gen_loop[5].FF/qs_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lineclear_datapath/y_counter/flipflop_gen_loop[4].FF/qs_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lineclear_datapath/y_counter/flipflop_gen_loop[3].FF/qs_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lineclear_datapath/y_counter/flipflop_gen_loop[2].FF/qs_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lineclear_datapath/y_counter/flipflop_gen_loop[1].FF/qs_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lineclear_datapath/y_counter/flipflop_gen_loop[0].FF/qs_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cicrle_datapath/px_counter/flipflop_gen_loop[1].FF/qs_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cicrle_datapath/px_counter/flipflop_gen_loop[2].FF/qs_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cicrle_datapath/px_counter/flipflop_gen_loop[0].FF/qs_reg )
+WARNING: [Synth 8-3331] design VGA_TOP has unconnected port SW[15]
+WARNING: [Synth 8-3331] design VGA_TOP has unconnected port SW[14]
+WARNING: [Synth 8-3331] design VGA_TOP has unconnected port SW[13]
+WARNING: [Synth 8-3331] design VGA_TOP has unconnected port SW[12]
+WARNING: [Synth 8-3331] design VGA_TOP has unconnected port SW[11]
+WARNING: [Synth 8-3331] design VGA_TOP has unconnected port SW[10]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2015.016 ; gain = 393.031 ; free physical = 18509 ; free virtual = 33164
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2015.156 ; gain = 393.094 ; free physical = 21227 ; free virtual = 34074
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -371,13 +380,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2015.016 ; gain = 393.031 ; free physical = 18647 ; free virtual = 33037
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2015.156 ; gain = 393.094 ; free physical = 21176 ; free virtual = 33999
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2015.016 ; gain = 393.031 ; free physical = 18639 ; free virtual = 33029
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2015.156 ; gain = 393.094 ; free physical = 21152 ; free virtual = 33975
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -403,7 +412,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2015.016 ; gain = 393.031 ; free physical = 18622 ; free virtual = 33013
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2015.156 ; gain = 393.094 ; free physical = 21152 ; free virtual = 33975
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -427,7 +436,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2015.016 ; gain = 393.031 ; free physical = 18628 ; free virtual = 33019
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2015.156 ; gain = 393.094 ; free physical = 21161 ; free virtual = 33984
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -440,7 +449,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2015.016 ; gain = 393.031 ; free physical = 18628 ; free virtual = 33019
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2015.156 ; gain = 393.094 ; free physical = 21161 ; free virtual = 33984
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -452,25 +461,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2015.016 ; gain = 393.031 ; free physical = 18628 ; free virtual = 33019
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2015.156 ; gain = 393.094 ; free physical = 21161 ; free virtual = 33984
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2015.016 ; gain = 393.031 ; free physical = 18628 ; free virtual = 33019
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2015.156 ; gain = 393.094 ; free physical = 21161 ; free virtual = 33984
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2015.016 ; gain = 393.031 ; free physical = 18628 ; free virtual = 33019
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2015.156 ; gain = 393.094 ; free physical = 21161 ; free virtual = 33984
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2015.016 ; gain = 393.031 ; free physical = 18628 ; free virtual = 33019
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2015.156 ; gain = 393.094 ; free physical = 21161 ; free virtual = 33984
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -486,76 +495,91 @@ Report Cell Usage:
 +------+-------+------+
 |      |Cell   |Count |
 +------+-------+------+
-|1     |BUFG   |     3|
-|2     |CARRY4 |    12|
-|3     |LUT1   |     4|
-|4     |LUT2   |    82|
-|5     |LUT3   |    55|
-|6     |LUT4   |    48|
-|7     |LUT5   |    38|
-|8     |LUT6   |   583|
-|9     |MUXF7  |   117|
-|10    |MUXF8  |    48|
+|1     |BUFG   |     1|
+|2     |CARRY4 |    21|
+|3     |LUT1   |     7|
+|4     |LUT2   |    78|
+|5     |LUT3   |    23|
+|6     |LUT4   |    64|
+|7     |LUT5   |    72|
+|8     |LUT6   |   641|
+|9     |MUXF7  |   114|
+|10    |MUXF8  |    51|
 |11    |RAM64M |   300|
-|12    |FDCE   |    90|
-|13    |IBUF   |    17|
+|12    |FDCE   |   127|
+|13    |IBUF   |    15|
 |14    |OBUF   |    14|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+--------------------------------+---------------+------+
-|      |Instance                        |Module         |Cells |
-+------+--------------------------------+---------------+------+
-|1     |top                             |               |  1411|
-|2     |  cicrle_datapath               |bresenham_algo |   399|
-|3     |    xB_counter                  |nbit_counter_8 |   375|
-|4     |      \flipflop_gen_loop[0].FF  |d_flipflop_9   |     8|
-|5     |      \flipflop_gen_loop[1].FF  |d_flipflop_10  |     7|
-|6     |      \flipflop_gen_loop[2].FF  |d_flipflop_11  |     6|
-|7     |      \flipflop_gen_loop[3].FF  |d_flipflop_12  |     8|
-|8     |      \flipflop_gen_loop[4].FF  |d_flipflop_13  |   342|
-|9     |      \flipflop_gen_loop[5].FF  |d_flipflop_14  |     1|
-|10    |      \flipflop_gen_loop[6].FF  |d_flipflop_15  |     2|
-|11    |      \flipflop_gen_loop[7].FF  |d_flipflop_16  |     1|
-|12    |  clear_press                   |d_flipflop     |     2|
-|13    |  controlpath_inst              |controlpath    |    27|
-|14    |  core_inst                     |vga_core       |   931|
-|15    |    vga_timing                  |vga_controller |   148|
-|16    |    video_mem                   |video_memory   |   752|
-|17    |  lineclear_datapath            |lineclear_algo |    18|
-|18    |    x_counter                   |nbit_counter   |    18|
-|19    |      \flipflop_gen_loop[0].FF  |d_flipflop_0   |     3|
-|20    |      \flipflop_gen_loop[1].FF  |d_flipflop_1   |     2|
-|21    |      \flipflop_gen_loop[2].FF  |d_flipflop_2   |     2|
-|22    |      \flipflop_gen_loop[3].FF  |d_flipflop_3   |     2|
-|23    |      \flipflop_gen_loop[4].FF  |d_flipflop_4   |     2|
-|24    |      \flipflop_gen_loop[5].FF  |d_flipflop_5   |     2|
-|25    |      \flipflop_gen_loop[6].FF  |d_flipflop_6   |     2|
-|26    |      \flipflop_gen_loop[7].FF  |d_flipflop_7   |     3|
-+------+--------------------------------+---------------+------+
++------+--------------------------------+-----------------------------+------+
+|      |Instance                        |Module                       |Cells |
++------+--------------------------------+-----------------------------+------+
+|1     |top                             |                             |  1528|
+|2     |  cicrle_datapath               |bresenham_algo               |   499|
+|3     |    init_d                      |d_flipflop_17                |     6|
+|4     |    px_counter                  |nbit_counter__parameterized1 |    32|
+|5     |      \flipflop_gen_loop[0].FF  |d_flipflop_27                |     9|
+|6     |      \flipflop_gen_loop[1].FF  |d_flipflop_28                |    10|
+|7     |      \flipflop_gen_loop[2].FF  |d_flipflop_29                |    13|
+|8     |    xB_counter                  |nbit_counter_18              |   402|
+|9     |      \flipflop_gen_loop[0].FF  |d_flipflop_19                |   345|
+|10    |      \flipflop_gen_loop[1].FF  |d_flipflop_20                |    13|
+|11    |      \flipflop_gen_loop[2].FF  |d_flipflop_21                |     5|
+|12    |      \flipflop_gen_loop[3].FF  |d_flipflop_22                |    12|
+|13    |      \flipflop_gen_loop[4].FF  |d_flipflop_23                |     9|
+|14    |      \flipflop_gen_loop[5].FF  |d_flipflop_24                |     9|
+|15    |      \flipflop_gen_loop[6].FF  |d_flipflop_25                |     4|
+|16    |      \flipflop_gen_loop[7].FF  |d_flipflop_26                |     5|
+|17    |  circl_press                   |d_flipflop                   |     1|
+|18    |  clear_press                   |d_flipflop_0                 |     2|
+|19    |  controlpath_inst              |controlpath                  |    74|
+|20    |  core_inst                     |vga_core                     |   887|
+|21    |    vga_timing                  |vga_controller               |   121|
+|22    |    video_mem                   |video_memory                 |   737|
+|23    |  line_press                    |d_flipflop_1                 |     1|
+|24    |  lineclear_datapath            |lineclear_algo               |    34|
+|25    |    x_counter                   |nbit_counter                 |    18|
+|26    |      \flipflop_gen_loop[0].FF  |d_flipflop_9                 |     2|
+|27    |      \flipflop_gen_loop[1].FF  |d_flipflop_10                |     4|
+|28    |      \flipflop_gen_loop[2].FF  |d_flipflop_11                |     2|
+|29    |      \flipflop_gen_loop[3].FF  |d_flipflop_12                |     1|
+|30    |      \flipflop_gen_loop[4].FF  |d_flipflop_13                |     2|
+|31    |      \flipflop_gen_loop[5].FF  |d_flipflop_14                |     2|
+|32    |      \flipflop_gen_loop[6].FF  |d_flipflop_15                |     2|
+|33    |      \flipflop_gen_loop[7].FF  |d_flipflop_16                |     3|
+|34    |    y_counter                   |nbit_counter__parameterized0 |    16|
+|35    |      \flipflop_gen_loop[0].FF  |d_flipflop_2                 |     2|
+|36    |      \flipflop_gen_loop[1].FF  |d_flipflop_3                 |     4|
+|37    |      \flipflop_gen_loop[2].FF  |d_flipflop_4                 |     2|
+|38    |      \flipflop_gen_loop[3].FF  |d_flipflop_5                 |     1|
+|39    |      \flipflop_gen_loop[4].FF  |d_flipflop_6                 |     2|
+|40    |      \flipflop_gen_loop[5].FF  |d_flipflop_7                 |     2|
+|41    |      \flipflop_gen_loop[6].FF  |d_flipflop_8                 |     3|
++------+--------------------------------+-----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2015.016 ; gain = 393.031 ; free physical = 18628 ; free virtual = 33019
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2015.156 ; gain = 393.094 ; free physical = 21161 ; free virtual = 33984
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2015.016 ; gain = 216.375 ; free physical = 18628 ; free virtual = 33019
-Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2015.016 ; gain = 393.031 ; free physical = 18637 ; free virtual = 33027
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2015.156 ; gain = 214.406 ; free physical = 21161 ; free virtual = 33984
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2015.156 ; gain = 393.094 ; free physical = 21175 ; free virtual = 33998
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 477 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 486 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2017.984 ; gain = 0.000 ; free physical = 18640 ; free virtual = 33031
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2021.094 ; gain = 0.000 ; free physical = 21185 ; free virtual = 34008
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 300 instances were transformed.
   RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 300 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-48 Infos, 59 Warnings, 17 Critical Warnings and 0 Errors encountered.
+40 Infos, 65 Warnings, 18 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2017.984 ; gain = 634.914 ; free physical = 18640 ; free virtual = 33031
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2017.984 ; gain = 0.000 ; free physical = 18640 ; free virtual = 33031
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2021.094 ; gain = 637.945 ; free physical = 21185 ; free virtual = 34008
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2021.094 ; gain = 0.000 ; free physical = 21185 ; free virtual = 34008
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.runs/synth_1/VGA_TOP.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file VGA_TOP_utilization_synth.rpt -pb VGA_TOP_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Dec  5 18:43:08 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  9 16:15:18 2024...

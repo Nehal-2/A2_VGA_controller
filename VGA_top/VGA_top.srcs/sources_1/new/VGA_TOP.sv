@@ -50,7 +50,7 @@ module VGA_TOP(
     
     logic plot;
     
-    logic enX, enY, enC, en_xB, load_xB, load_yB, en_yB, en_d, y_count_reset, x_count_reset, px_count_reset, clear_ff, clear_pressed;
+    logic enX, enY, enC, en_xB, load_xB, load_yB, en_yB, en_d, y_count_reset, x_count_reset, px_count_en;
     
     vga_core core_inst(
         .clk(CLK100MHZ),                        // Clock input
@@ -66,6 +66,10 @@ module VGA_TOP(
         .VGA_VS(VGA_VS) 
     );
     
+    // Button Debouncing (detect high-to-low transition)
+    
+    logic clear_ff, clear_pressed, line_ff, line_pressed, circle_ff, circle_pressed;
+    
     d_flipflop clear_press(
         .clk(clk),
         .areset(reset_n),
@@ -76,10 +80,30 @@ module VGA_TOP(
     
     assign clear_pressed = (~clear_ff & clear);
     
+    d_flipflop line_press(
+        .clk(clk),
+        .areset(reset_n),
+        .en(1'b1),
+        .d(line),
+        .qs(line_ff)
+    );
+    
+    assign line_pressed = (~line_ff & line);
+    
+    d_flipflop circl_press(
+        .clk(clk),
+        .areset(reset_n),
+        .en(1'b1),
+        .d(circle),
+        .qs(circle_ff)
+    );
+    
+    assign circle_pressed = (~circle_ff & circle);
+    
     logic [7:0] x_line, x_circle;
     logic [6:0] y_line, y_circle;
     logic [2:0] color_line;
-    logic max_x, max_y, xB_yB_comp, d_comp;
+    logic max_x, max_y, max_px_count, xB_yB_comp, d_comp;
     
     // Instantiation of data path modules
     
@@ -110,8 +134,9 @@ module VGA_TOP(
         .load_yB(load_yB),
         .en_yB(en_yB),
         .en_d(en_d),
-        .px_count_reset(px_count_reset),
+        .px_count_en(px_count_en),
         .xB_yB_comp(xB_yB_comp),
+        .max_px_count(max_px_count),
         .d_comp(d_comp),
         .x_out(x_circle),
         .y_out(y_circle) 
@@ -125,17 +150,20 @@ module VGA_TOP(
         .max_x(max_x),
         .max_y(max_y),
         .clear(clear),
-        .line(line),
-        .circle(circle),
+        //.line(line),
+        //.circle(circle),
         .d_comp(d_comp),
         .XB_YB_comp(xB_yB_comp),
         .clear_pressed(clear_pressed),
+        .line_pressed(line_pressed),
+        .circle_pressed(circle_pressed),
+        .max_px_count(max_px_count),
         .enX(enX),
         .enY(enY),
         .enC(enC),
         .x_count_reset(x_count_reset), 
         .y_count_reset(y_count_reset),
-        .px_count_reset(px_count_reset),
+        .px_count_en(px_count_en),
         .en_XB(en_xB), 
         .load_XB(load_xB),
         .en_YB(en_yB),
@@ -146,11 +174,8 @@ module VGA_TOP(
     
     // Outputs
     
-    logic en;
-    assign en = SW[15];
-    
-    assign color_out = en ? in_color : color_line;
-    assign x_out =  en ? x_circle : x_line;
-    assign y_out = en ? y_circle : y_line;
+    assign color_out = enC ? in_color : color_line;
+    assign x_out =  enC ? x_circle : x_line;
+    assign y_out = enC ? y_circle : y_line;
     
 endmodule

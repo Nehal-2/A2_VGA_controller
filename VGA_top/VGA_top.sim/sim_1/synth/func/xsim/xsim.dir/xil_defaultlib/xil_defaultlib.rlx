@@ -1,0 +1,6 @@
+0.6
+2019.1
+May 24 2019
+14:51:52
+/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.sim/sim_1/synth/func/xsim/tb_VGA_TOP_func_synth.v,1733754392,verilog,,,,VGA_TOP;bresenham_algo;controlpath;d_flipflop;d_flipflop_0;d_flipflop_1;d_flipflop_10;d_flipflop_11;d_flipflop_12;d_flipflop_13;d_flipflop_14;d_flipflop_15;d_flipflop_16;d_flipflop_17;d_flipflop_19;d_flipflop_2;d_flipflop_20;d_flipflop_21;d_flipflop_22;d_flipflop_23;d_flipflop_24;d_flipflop_25;d_flipflop_26;d_flipflop_27;d_flipflop_28;d_flipflop_29;d_flipflop_3;d_flipflop_4;d_flipflop_5;d_flipflop_6;d_flipflop_7;d_flipflop_8;d_flipflop_9;dbg_hub_CV;glbl;lineclear_algo;nbit_counter;nbit_counter_18;nbit_counter__parameterized0;nbit_counter__parameterized1;u_ila_0_CV;vga_controller;vga_core;video_memory,,,,,,,,
+/home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sim_1/new/tb_VGA_TOP.sv,1733751192,systemVerilog,,,,tb_VGA_TOP,,,,,,,,

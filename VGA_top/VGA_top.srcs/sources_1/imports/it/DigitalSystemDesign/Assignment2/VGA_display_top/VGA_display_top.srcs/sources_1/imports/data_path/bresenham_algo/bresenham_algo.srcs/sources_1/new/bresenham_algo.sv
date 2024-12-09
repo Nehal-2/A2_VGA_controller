@@ -31,7 +31,7 @@ module bresenham_algo(
     input logic load_yB,
     input logic en_yB, // for register yB
     input logic en_d, // for register d
-    input logic px_count_reset,
+    input logic px_count_en,
     output logic xB_yB_comp,
     output logic d_comp,
     output logic max_px_count,
@@ -44,8 +44,9 @@ module bresenham_algo(
     
     logic enC_ff, is_begin;
     
-    logic [7:0] xB;
-    logic [6:0] reg_yB, radius_capped;
+    logic signed [7:0] xB;
+    logic [6:0] radius_capped;
+    logic signed [7:0] reg_yB;
         
     d_flipflop init_d(
         .clk(clk),
@@ -59,18 +60,20 @@ module bresenham_algo(
     
     // d logic:
     assign radius_capped = (radius <= 'd59) ? radius : 'd59;
-    logic [6:0] initial_d, reg_d;
+    logic signed [9:0] initial_d, reg_d;
     
     assign initial_d = 3 - 2*radius_capped;
     
     always_ff @(posedge clk, negedge reset_n) begin
         if (!reset_n)
             reg_d <= 0;
+        else if (en_d && is_begin)
+            reg_d <= initial_d;
         else if (en_d)
-            reg_d <= is_begin ? initial_d : (d_comp ? reg_d + 4*xB + 6 : reg_d + 4*(xB - reg_yB) + 10);
+            reg_d <= d_comp ? reg_d + 4*(xB - reg_yB) + 10 : reg_d + 4*xB + 6;
      end
     
-    assign d_comp = (reg_d < 0) & enC; // to generate en_d
+    assign d_comp = (reg_d >= 0); // to generate en_d
     
     // x incrementer:
     nbit_counter#(.n(8)) xB_counter (
@@ -89,9 +92,9 @@ module bresenham_algo(
             reg_yB <= 0;
         else if (en_yB)
             if (load_yB)
-                reg_yB <= radius_capped;
+                reg_yB <= {1'b0, radius_capped};
             else
-                reg_yB <= d_comp ? reg_yB : reg_yB - 1;
+                reg_yB <= d_comp ? reg_yB - 1 : reg_yB;
     end
     
     assign xB_yB_comp = (xB <= {1'b0,reg_yB}) & enC; // to generate en_xB
@@ -125,13 +128,13 @@ module bresenham_algo(
     
     nbit_counter#(.n(3)) px_counter (
         .clk(clk),
-        .areset(px_count_reset),
-        .en(enC & ~en_xB),
+        .areset(reset_n),
+        .en(px_count_en),
         .up_down(1'b0), // down count if high
         .q(px_count)
     );
     
-    assign max_px_count = (px_count < 8) ? 0 : 1;
+    assign max_px_count = (px_count >= 7);
     
     always_comb begin
         x_out = px_x[px_count];

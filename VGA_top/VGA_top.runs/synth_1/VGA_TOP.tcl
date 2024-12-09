@@ -37,11 +37,11 @@ read_verilog -library xil_defaultlib -sv {
   /home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/DigitalSystemDesign/Assignment2/VGA_display_top/VGA_display_top.srcs/sources_1/imports/data_path/bresenham_algo/bresenham_algo.srcs/sources_1/imports/Lab4/d_FF/d_FF_srcs/d_flipflop.sv
   /home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/DigitalSystemDesign/Assignment2/VGA_display_top/VGA_display_top.srcs/sources_1/imports/data_path/line_clear/line_clear.srcs/sources_1/new/lineclear_algo.sv
   /home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/DigitalSystemDesign/Assignment2/VGA_display_top/VGA_display_top.srcs/sources_1/imports/data_path/bresenham_algo/bresenham_algo.srcs/sources_1/imports/new/nbit_counter.sv
-  /home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/Downloads/vga_core.sv
-  /home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/Downloads/video_memory.sv
+  /home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/Downloads/vga_core.sv
+  /home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/Downloads/video_memory.sv
   /home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/new/VGA_TOP.sv
 }
-read_verilog -library xil_defaultlib /home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/it/Downloads/vga_controller.v
+read_verilog -library xil_defaultlib /home/it/DigitalSystemDesign/Assignment2/VGA_top/VGA_top.srcs/sources_1/imports/Downloads/vga_controller.v
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be

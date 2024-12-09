@@ -56,18 +56,26 @@ module tb_VGA_TOP;
     initial begin
        clear = 0; line = 0; circle = 0;
        SW[15:10] = 6'b0;
-       SW[9:3] = 7'b0001000; SW[2:0] = 3'b100;
+       SW[9:3] = 7'b0000100; SW[2:0] = 3'b100;
        reset_n = 1; #10; reset_n = 0; #10; reset_n = 1;
        SW[9:3] = 7'b0001000; SW[2:0] = 3'b100; #10
        
-       line = 1; #10; line = 0;
        
-       clear = 1; #30; clear = 0; #30;
-       circle = 1; #10; circle = 0; #50;
+       circle = 1; #10; circle = 0;
+//       repeat (160*120) begin @(negedge clk); end
+       repeat (160*120) begin @(negedge clk); end
+       
        clear = 1; #30; clear = 0; #10;
+       repeat (160*120) begin @(negedge clk); end
        
-       line = 1; clear = 1; #20
-       line = 1; circle = 1; 
+       line = 1; #10; line = 0; #50;
+       repeat (30) begin @(negedge clk); end
+       
+//       clear = 1; #30; clear = 0; #30;       
+//       repeat (30) begin @(negedge clk); end
+       
+//       line = 1; clear = 1; #20
+//       line = 1; circle = 1; 
        
        $finish;
     end

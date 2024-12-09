@@ -45,10 +45,10 @@ output reg [2:0] color
   //reset for counters 
   always @(*)begin
     
-    if(y<120) max_y = 0;
+    if(y<119) max_y = 0;
     else max_y = 1;
     
-    if(x<160) max_x = 0;
+    if(x<159) max_x = 0;
     else max_x = 1;  
    
   end

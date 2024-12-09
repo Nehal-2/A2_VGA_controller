@@ -1,0 +1,72 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /home/it/Xilinx/Vivado/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto 90ade408325743189163f653a599d5ab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L secureip --snapshot tb_VGA_TOP_func_synth xil_defaultlib.tb_VGA_TOP xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.FDCE_default
+Compiling module unisims_ver.LUT5
+Compiling module xil_defaultlib.d_flipflop_17
+Compiling module unisims_ver.LUT6
+Compiling module xil_defaultlib.d_flipflop_27
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.d_flipflop_28
+Compiling module xil_defaultlib.d_flipflop_29
+Compiling module xil_defaultlib.nbit_counter__parameterized1
+Compiling module xil_defaultlib.d_flipflop_19
+Compiling module xil_defaultlib.d_flipflop_20
+Compiling module xil_defaultlib.d_flipflop_21
+Compiling module xil_defaultlib.d_flipflop_22
+Compiling module xil_defaultlib.d_flipflop_23
+Compiling module xil_defaultlib.d_flipflop_24
+Compiling module xil_defaultlib.d_flipflop_25
+Compiling module xil_defaultlib.d_flipflop_26
+Compiling module xil_defaultlib.nbit_counter_18
+Compiling module xil_defaultlib.bresenham_algo
+Compiling module xil_defaultlib.d_flipflop
+Compiling module xil_defaultlib.d_flipflop_0
+Compiling module xil_defaultlib.controlpath
+Compiling module xil_defaultlib.vga_controller
+Compiling module unisims_ver.MUXF7
+Compiling module unisims_ver.MUXF8
+Compiling module unisims_ver.RAM64M
+Compiling module xil_defaultlib.video_memory
+Compiling module xil_defaultlib.vga_core
+Compiling module xil_defaultlib.dbg_hub_CV
+Compiling module xil_defaultlib.d_flipflop_1
+Compiling module xil_defaultlib.d_flipflop_9
+Compiling module xil_defaultlib.d_flipflop_10
+Compiling module xil_defaultlib.d_flipflop_11
+Compiling module xil_defaultlib.d_flipflop_12
+Compiling module xil_defaultlib.d_flipflop_13
+Compiling module xil_defaultlib.d_flipflop_14
+Compiling module xil_defaultlib.d_flipflop_15
+Compiling module xil_defaultlib.d_flipflop_16
+Compiling module xil_defaultlib.nbit_counter
+Compiling module xil_defaultlib.d_flipflop_2
+Compiling module xil_defaultlib.d_flipflop_3
+Compiling module xil_defaultlib.d_flipflop_4
+Compiling module xil_defaultlib.d_flipflop_5
+Compiling module xil_defaultlib.d_flipflop_6
+Compiling module xil_defaultlib.d_flipflop_7
+Compiling module xil_defaultlib.d_flipflop_8
+Compiling module xil_defaultlib.nbit_counter__parameterized0
+Compiling module xil_defaultlib.lineclear_algo
+Compiling module xil_defaultlib.u_ila_0_CV
+Compiling module xil_defaultlib.VGA_TOP
+Compiling module xil_defaultlib.tb_VGA_TOP
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_VGA_TOP_func_synth
